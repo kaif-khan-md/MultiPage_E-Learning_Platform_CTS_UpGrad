@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="quizHeader" class="app-header text-white text-center p-4 sticky-top">
+        <h2 class="mb-1">🧠 Quiz</h2>
+        <p class="mb-0 small">Test your knowledge and improve your skills</p>
+    </header>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-brand">E-Learning</span>
+
+            <div class="d-flex gap-3">
+                <a class="nav-link text-white nav-item-link" href="dashboard.html">Dashboard</a>
+                <a class="nav-link text-white nav-item-link" href="courses.html">Courses</a>
+                <a class="nav-link text-white nav-item-link" href="quiz.html">Quiz</a>
+                <a class="nav-link text-white nav-item-link" href="profile.html">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- breadcrumb -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                <li class="breadcrumb-item active">Quiz</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- main -->
+    <main class="container mt-4">
+
+        <section class="card shadow p-4">
+
+        <h4 class="mb-3">📋 Quiz Questions</h4>
+
+        <!-- quiz container -->
+        <section id="quizContainer" class="mb-3">
+            <div class="spinner-border text-primary"></div>
+            <p class="mt-2">Loading Quiz...</p>
+        </section>
+
+        <!-- submit button -->
+        <div class="text-center">
+            <button class="btn btn-success px-4" onclick="submitQuiz()">
+            Submit Quiz
+            </button>
+        </div>
+
+        <!-- result -->
+        <section id="result" class="mt-4 alert alert-info"></section>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white text-center p-2 mt-auto">
+        <p class="mb-0">© 2026 E-learning Platform</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
